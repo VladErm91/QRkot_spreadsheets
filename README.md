@@ -1,1 +1,75 @@
-# QRkot_spreadseets
+# Приложение для Благотворительного фонда поддержки котиков QRKot на основе Fast API c поддержкой Google Sheets.
+
+## Учебный проект Яндекс Практикум
+
+### Возможности сервиса:
+
+Создать приложение для организации сбора пожертвования котикам 
+на различные цели к примеру на лечение, корм, создание благоприятных условий существования,
+с поддержкой вывода отчетов по пожертвованиям на завершеннные проекты на основе Google Sheets
+
+### Технологии проекта
+* Python
+* Fast API - отдельный фреймворк для работы с веб сайтами.
+* Google API - отдельный фреймворк позволяющий подключаться и использовать различные сервисы Google например Google Sheets.
+
+### Для работы проекта в .env необходимо указать следующие переменные
+
+```
+APP_TITLE=Приложение QRKot.
+APP_DESC=
+DATABASE_URL=
+SECRET=
+
+FIRST_SUPERUSER_EMAIL=
+FIRST_SUPERUSER_PASSWORD=
+```
+
+EMAIL=
+AUTH_PROVIDER_X509_CERT_URL=
+AUTH_URI=
+CLIENT_EMAIL=
+CLIENT_ID=
+CLIENT_X509_CERT_URL=
+PRIVATE_KEY=
+PRIVATE_KEY_ID=
+PROJECT_ID=
+TOKEN_URI=
+TYPE=
+
+### Как запустить проект:
+Клонировать репозиторий и перейти в него в командной строке:
+
+```
+git clone https://github.com/VladErm91/QRkot_spreadsheets.git
+
+cd QRkot_spreadsheets
+```
+
+Cоздать и активировать виртуальное окружение:
+
+```
+python -m venv venv
+```
+
+```
+source venv/scripts/activate
+```
+
+Установить зависимости из файла requirements.txt:
+
+```
+python -m pip install --upgrade pip
+```
+
+```
+pip install -r requirements.txt
+```
+
+Запуск сервиса 
+
+```
+uvicorn app.main:app
+```
+
+Автор: [VladErm91](https://github.com/VladErm91)

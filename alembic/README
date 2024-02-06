@@ -1,0 +1,12 @@
+Generic single-database configuration with an async dbapi.
+
+Для запуска/обновления/отката миграций необходимы следующие команды 
+
+Создание миграции
+alembic revision --autogenerate -m "migration name" 
+
+Применение миграции
+alembic upgrade head 
+
+Откат миграции
+alembic downgrade basec
