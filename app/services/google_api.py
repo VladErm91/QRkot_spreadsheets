@@ -6,8 +6,9 @@ from typing import List, Dict
 
 from app.core.config import settings
 
-FORMAT = "%Y/%m/%d %H:%M:%S"
+FORMAT = '%Y/%m/%d %H:%M:%S'
 TITLE = 'Projects'
+
 JS_CONST = dict(
     properties=dict(
         title='Отчет от ',
@@ -49,7 +50,7 @@ async def spreadsheets_create(
         service.spreadsheets.create(json=spreadsheet_body)
     )
     spreadsheet_id = response['spreadsheetId']
-    return [spreadsheet_id, now_date_time]
+    return (spreadsheet_id, now_date_time)
 
 
 async def set_user_permissions(
@@ -71,7 +72,7 @@ async def set_user_permissions(
 async def spreadsheets_update_value(
         wrapper_services: Aiogoogle,
         spreadsheet_id: str,
-        projects: List,
+        projects: List[List[str]],
         spreadsheet_creation_date: str,
         table_header: List = None,
 ) -> None:
@@ -91,7 +92,7 @@ async def spreadsheets_update_value(
     await wrapper_services.as_service_account(
         service.spreadsheets.values.update(
             spreadsheetId=spreadsheet_id,
-            range=TITLE,
+            range='A1:E30',
             valueInputOption='USER_ENTERED',
             json=update_body
         )
