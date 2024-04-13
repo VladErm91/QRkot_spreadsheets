@@ -1,6 +1,8 @@
 # Приложение для Благотворительного фонда поддержки котиков QRKot на основе Fast API c поддержкой Google Sheets.
 
-## Учебный проект Яндекс Практикум
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
+![Google](https://img.shields.io/badge/google-4285F4?style=for-the-badge&logo=google&logoColor=white)
 
 ### Возможности сервиса:
 
@@ -13,7 +15,7 @@
 * Fast API - отдельный фреймворк для работы с веб сайтами.
 * Google API - отдельный фреймворк позволяющий подключаться и использовать различные сервисы Google например Google Sheets.
 
-### Для работы проекта в .env необходимо указать следующие переменные
+### Для работы проекта в файле .env необходимо указать следующие переменные
 
 ```
 APP_TITLE=Приложение QRKot.
