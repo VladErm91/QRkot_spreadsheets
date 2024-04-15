@@ -15,30 +15,6 @@
 * Fast API - отдельный фреймворк для работы с веб сайтами.
 * Google API - отдельный фреймворк позволяющий подключаться и использовать различные сервисы Google например Google Sheets.
 
-### Для работы проекта в файле .env необходимо указать следующие переменные
-
-```
-APP_TITLE=Приложение QRKot.
-APP_DESC=
-DATABASE_URL=
-SECRET=
-
-FIRST_SUPERUSER_EMAIL=
-FIRST_SUPERUSER_PASSWORD=
-```
-
-EMAIL=
-AUTH_PROVIDER_X509_CERT_URL=
-AUTH_URI=
-CLIENT_EMAIL=
-CLIENT_ID=
-CLIENT_X509_CERT_URL=
-PRIVATE_KEY=
-PRIVATE_KEY_ID=
-PROJECT_ID=
-TOKEN_URI=
-TYPE=
-
 ### Как запустить проект:
 Клонировать репозиторий и перейти в него в командной строке:
 
@@ -73,5 +49,33 @@ pip install -r requirements.txt
 ```
 uvicorn app.main:app
 ```
+
+### Необходимые переменные среды (.env)
+
+Переменные для работы приложения
+```
+APP_TITLE=Приложение QRKot.
+APP_DESC=
+DATABASE_URL=
+SECRET=
+
+FIRST_SUPERUSER_EMAIL=
+FIRST_SUPERUSER_PASSWORD=
+```
+Переменные для Google-API
+```
+EMAIL=
+AUTH_PROVIDER_X509_CERT_URL=
+AUTH_URI=
+CLIENT_EMAIL=
+CLIENT_ID=
+CLIENT_X509_CERT_URL=
+PRIVATE_KEY=
+PRIVATE_KEY_ID=
+PROJECT_ID=
+TOKEN_URI=
+TYPE=
+```
+
 
 Автор: [VladErm91](https://github.com/VladErm91)
